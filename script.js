@@ -272,35 +272,30 @@ const emailLink = document.getElementById("emailLink");
 
 function configurarContacto(idioma) {
   const numero = CONTACTO.whatsapp.replace(/\D/g, "");
-  const whatsappValido = /^\d{8,15}$/.test(numero);
-
-  if (whatsappValido) {
-    whatsappLink.href =
-      `https://wa.me/${numero}?text=${encodeURIComponent(MENSAJES_WHATSAPP[idioma])}`;
-
-    whatsappLink.removeAttribute("aria-disabled");
-    whatsappLink.removeAttribute("title");
-    whatsappStatus.textContent = "";
-  } else {
-    whatsappLink.href = "#contacto";
-    whatsappLink.setAttribute("aria-disabled", "true");
-    whatsappLink.title = "Configura tu número de WhatsApp en script.js";
-
-    whatsappStatus.textContent = {
-      es: "Pendiente: agrega tu número real de WhatsApp en script.js.",
-      en: "Setup needed: add your real WhatsApp number in script.js.",
-      fr: "Configuration requise : ajoutez votre numéro WhatsApp dans script.js."
-    }[idioma];
-  }
-
   const correo = CONTACTO.correo.trim();
 
-  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
+  const whatsappLink = document.getElementById("whatsappLink");
+  const whatsappStatus = document.getElementById("whatsappStatus");
+  const emailLink = document.getElementById("emailLink");
+
+  if (whatsappLink && /^\d{8,15}$/.test(numero)) {
+    const mensaje =
+      MENSAJES_WHATSAPP[idioma] || MENSAJES_WHATSAPP.es;
+
+    whatsappLink.href =
+      `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+    whatsappLink.target = "_blank";
+    whatsappLink.rel = "noopener noreferrer";
+  }
+
+  if (whatsappStatus) {
+    whatsappStatus.textContent = "";
+  }
+
+  if (emailLink && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
     emailLink.href = `mailto:${correo}`;
     emailLink.textContent = correo;
-  } else {
-    emailLink.removeAttribute("href");
-    emailLink.textContent = traducciones[idioma].emailPlaceholder;
   }
 }
 
@@ -346,37 +341,12 @@ links.querySelectorAll("a").forEach(a => {
   });
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
 
-function configurarFormulario(idioma) {
-  const form = document.getElementById("quoteForm");
-  const status = document.getElementById("formStatus");
-  const button = document.getElementById("sendButton");
-  const correo = CONTACTO.correo.trim();
+const yearElement = document.getElementById("year");
 
-  const listo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo);
-
-  if (listo) {
-    form.action = `https://formsubmit.co/${encodeURIComponent(correo)}`;
-    button.disabled = false;
-
-    status.textContent = {
-      es: "La primera solicitud puede requerir activar FormSubmit desde su correo electrónico.",
-      en: "The first submission may require email activation through FormSubmit.",
-      fr: "Le premier envoi peut nécessiter une activation par e-mail via FormSubmit."
-    }[idioma];
-  } else {
-    form.removeAttribute("action");
-    button.disabled = true;
-
-    status.textContent = {
-      es: "Pendiente: agregue su correo real en script.js para activar el formulario.",
-      en: "Setup needed: add your real email in script.js to enable the form.",
-      fr: "Configuration requise : ajoutez votre véritable adresse e-mail dans script.js."
-    }[idioma];
-  }
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
 }
-
 
 
 cambiarIdioma("es");
