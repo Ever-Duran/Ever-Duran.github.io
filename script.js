@@ -53,8 +53,8 @@ const traducciones = {
     about2: "Inicié mi trayectoria como traductor en 2018, colaborando de manera voluntaria con diversas organizaciones. Desde entonces, he trabajado en proyectos de traducción de documentos legales, académicos y administrativos, entre ellos actas del estado civil, apostillas, certificaciones de notas y correspondencia.",
     about3: "Mi objetivo es ofrecer un servicio de traducción confiable, con especial énfasis en la precisión terminológica, la confidencialidad y las necesidades particulares de cada cliente.",
     aboutLink: "Conversemos sobre su proyecto ↗",
-    "navTestimonials": "Testimonios",
-
+    
+    navTestimonials: "Testimonios",
     testimonialsEyebrow: "REFERENCIAS PROFESIONALES",
     testimonialsTitle: "La confianza también<br><em>se construye con palabras.</em>",
     testimonialsIntro: "Este espacio está preparado para compartir las opiniones de profesionales del derecho que han utilizado mis servicios.",
