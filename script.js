@@ -5,8 +5,8 @@
 // 2. Correo: escribe tu dirección real.
 // =============================================================
 const CONTACTO = {
-  whatsapp: "50378178141", // EJEMPLO DE FORMATO: "503XXXXXXXX"
-  correo: "ever.traductor11@gmail.com"    // EJEMPLO: "correo@tudominio.com"
+  whatsapp: "50378178141",
+  correo: "ever.traductor11@gmail.com"
 };
 
 const MENSAJES_WHATSAPP = {
@@ -53,8 +53,8 @@ const traducciones = {
     about2: "Inicié mi trayectoria como traductor en 2018, colaborando de manera voluntaria con diversas organizaciones. Desde entonces, he trabajado en proyectos de traducción de documentos legales, académicos y administrativos, entre ellos actas del estado civil, apostillas, certificaciones de notas y correspondencia.",
     about3: "Mi objetivo es ofrecer un servicio de traducción confiable, con especial énfasis en la precisión terminológica, la confidencialidad y las necesidades particulares de cada cliente.",
     aboutLink: "Conversemos sobre su proyecto ↗",
-    
-    navTestimonials: "Testimonios",
+    "navTestimonials": "Testimonios",
+
     testimonialsEyebrow: "REFERENCIAS PROFESIONALES",
     testimonialsTitle: "La confianza también<br><em>se construye con palabras.</em>",
     testimonialsIntro: "Este espacio está preparado para compartir las opiniones de profesionales del derecho que han utilizado mis servicios.",
@@ -62,7 +62,7 @@ const traducciones = {
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Abogado/a · Testimonio pendiente",
     testimonialPlaceholder2: "Aquí irá el testimonio real del segundo abogado o abogada, una vez que autorice su publicación.",
-    testimonialName2: "Lic. Jonathan Álvez",
+    testimonialName2: "Lic. Jonathan Alves",
     testimonialRole2: "Abogado/a · Testimonio pendiente",
     testimonialNote: "Antes de publicar, reemplaza estos textos con testimonios auténticos y confirma que tienes permiso para compartirlos.",
 
@@ -144,7 +144,7 @@ const traducciones = {
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Attorney · Testimonial pending",
     testimonialPlaceholder2: "The second attorney’s actual testimonial will appear here once permission to publish it has been granted.",
-    testimonialName2: "Lic. Jonathan Álvez",
+    testimonialName2: "Lic. Jonathan Alves",
     testimonialRole2: "Attorney · Testimonial pending",
     testimonialNote: "Before publishing, replace these placeholders with genuine testimonials and make sure you have permission to share them.",
 
@@ -227,7 +227,7 @@ const traducciones = {
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Avocat(e) · Témoignage en attente",
     testimonialPlaceholder2: "Le témoignage réel du deuxième avocat ou de la deuxième avocate figurera ici après autorisation de publication.",
-    testimonialName2: "Lic. Jonathan Álvez",
+    testimonialName2: "Lic. Jonathan Alves",
     testimonialRole2: "Avocat(e) · Témoignage en attente",
     testimonialNote: "Avant publication, remplacez ces textes provisoires par des témoignages authentiques et assurez-vous d’avoir l’autorisation de les partager.",
 
@@ -273,8 +273,11 @@ const emailLink = document.getElementById("emailLink");
 function configurarContacto(idioma) {
   const numero = CONTACTO.whatsapp.replace(/\D/g, "");
   const whatsappValido = /^\d{8,15}$/.test(numero);
+
   if (whatsappValido) {
-    whatsappLink.href = `https://wa.me/${numero}?text=${encodeURIComponent(MENSAJES_WHATSAPP[idioma])}`;
+    whatsappLink.href =
+      `https://wa.me/${numero}?text=${encodeURIComponent(MENSAJES_WHATSAPP[idioma])}`;
+
     whatsappLink.removeAttribute("aria-disabled");
     whatsappLink.removeAttribute("title");
     whatsappStatus.textContent = "";
@@ -282,13 +285,16 @@ function configurarContacto(idioma) {
     whatsappLink.href = "#contacto";
     whatsappLink.setAttribute("aria-disabled", "true");
     whatsappLink.title = "Configura tu número de WhatsApp en script.js";
+
     whatsappStatus.textContent = {
       es: "Pendiente: agrega tu número real de WhatsApp en script.js.",
       en: "Setup needed: add your real WhatsApp number in script.js.",
       fr: "Configuration requise : ajoutez votre numéro WhatsApp dans script.js."
     }[idioma];
   }
+
   const correo = CONTACTO.correo.trim();
+
   if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
     emailLink.href = `mailto:${correo}`;
     emailLink.textContent = correo;
@@ -301,40 +307,59 @@ function configurarContacto(idioma) {
 function cambiarIdioma(idioma) {
   const dic = traducciones[idioma] || traducciones.es;
   document.documentElement.lang = idioma;
+
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const valor = dic[el.dataset.i18n];
-    if (valor !== undefined) el.innerHTML = valor;
+    if (valor !== undefined) {
+      el.innerHTML = valor;
+    }
   });
-  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => { const value = dic[el.dataset.i18nPlaceholder]; if (value) el.placeholder = value; });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const value = dic[el.dataset.i18nPlaceholder];
+    if (value) {
+      el.placeholder = value;
+    }
+  });
+
   selector.value = idioma;
   document.title = dic.brandPlain;
   configurarContacto(idioma);
-  configurarFormulario(idioma);
 }
 
-selector.addEventListener("change", e => cambiarIdioma(e.target.value));
+selector.addEventListener("change", e => {
+  cambiarIdioma(e.target.value);
+});
+
 const menu = document.getElementById("menuToggle");
 const links = document.getElementById("navLinks");
+
 menu.addEventListener("click", () => {
   const abierto = links.classList.toggle("open");
   menu.setAttribute("aria-expanded", String(abierto));
 });
-links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
-  links.classList.remove("open");
-  menu.setAttribute("aria-expanded", "false");
-}));
+
+links.querySelectorAll("a").forEach(a => {
+  a.addEventListener("click", () => {
+    links.classList.remove("open");
+    menu.setAttribute("aria-expanded", "false");
+  });
+});
+
 document.getElementById("year").textContent = new Date().getFullYear();
-cambiarIdioma("es");
 
 function configurarFormulario(idioma) {
   const form = document.getElementById("quoteForm");
   const status = document.getElementById("formStatus");
   const button = document.getElementById("sendButton");
   const correo = CONTACTO.correo.trim();
+
   const listo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo);
+
   if (listo) {
     form.action = `https://formsubmit.co/${encodeURIComponent(correo)}`;
     button.disabled = false;
+
     status.textContent = {
       es: "La primera solicitud puede requerir activar FormSubmit desde su correo electrónico.",
       en: "The first submission may require email activation through FormSubmit.",
@@ -343,6 +368,7 @@ function configurarFormulario(idioma) {
   } else {
     form.removeAttribute("action");
     button.disabled = true;
+
     status.textContent = {
       es: "Pendiente: agregue su correo real en script.js para activar el formulario.",
       en: "Setup needed: add your real email in script.js to enable the form.",
@@ -351,8 +377,6 @@ function configurarFormulario(idioma) {
   }
 }
 
-document.getElementById("quoteForm").addEventListener("submit", event => {
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(CONTACTO.correo.trim())) {
-    event.preventDefault();
-  }
-});
+
+
+cambiarIdioma("es");
