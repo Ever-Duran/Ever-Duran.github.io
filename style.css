@@ -13,6 +13,7 @@
   --sans: "DM Sans", Arial, sans-serif;
   --container: 1160px;
 }
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.65; }
@@ -222,3 +223,22 @@ h2 { font-size: clamp(36px, 4vw, 50px); margin: 17px 0 0; }
 .testimonial-note { max-width:800px; margin:18px 0 0; color:var(--muted); font-size:11px; line-height:1.7; }
 @media(max-width:900px) { .focus-grid { grid-template-columns:1fr 1fr; } .focus-card:last-child { grid-column:1/-1; } }
 @media(max-width:720px) { .salvador-badge { right:5px; bottom:-2px; } .focus-section { padding-block:78px; } .focus-grid,.testimonial-grid { grid-template-columns:1fr; } .focus-card:last-child { grid-column:auto; } .focus-card img { aspect-ratio:640/330; } .testimonials-section { padding-block:78px; } .testimonial-card { padding:25px; } }
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-links a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #0A66C2;
+  text-decoration: underline;
+}
+
