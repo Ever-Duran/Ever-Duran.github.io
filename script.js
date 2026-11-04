@@ -62,7 +62,7 @@ const traducciones = {
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Abogado/a · Testimonio pendiente",
     testimonialPlaceholder2: "Aquí irá el testimonio real del segundo abogado o abogada, una vez que autorice su publicación.",
-    testimonialName2: "Lic. Jonathan Alves",
+    testimonialName2: "Lic. Jonathan Álvez",
     testimonialRole2: "Abogado/a · Testimonio pendiente",
     testimonialNote: "Antes de publicar, reemplaza estos textos con testimonios auténticos y confirma que tienes permiso para compartirlos.",
 
@@ -144,7 +144,7 @@ const traducciones = {
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Attorney · Testimonial pending",
     testimonialPlaceholder2: "The second attorney’s actual testimonial will appear here once permission to publish it has been granted.",
-    testimonialName2: "Lic. Jonathan Alves",
+    testimonialName2: "Lic. Jonathan Álvez",
     testimonialRole2: "Attorney · Testimonial pending",
     testimonialNote: "Before publishing, replace these placeholders with genuine testimonials and make sure you have permission to share them.",
 
@@ -227,7 +227,7 @@ const traducciones = {
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Avocat(e) · Témoignage en attente",
     testimonialPlaceholder2: "Le témoignage réel du deuxième avocat ou de la deuxième avocate figurera ici après autorisation de publication.",
-    testimonialName2: "Lic. Jonathan Alves",
+    testimonialName2: "Lic. Jonathan Álvez",
     testimonialRole2: "Avocat(e) · Témoignage en attente",
     testimonialNote: "Avant publication, remplacez ces textes provisoires par des témoignages authentiques et assurez-vous d’avoir l’autorisation de les partager.",
 
