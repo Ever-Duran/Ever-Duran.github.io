@@ -62,7 +62,7 @@ const traducciones = {
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Abogado",
     testimonialPlaceholder2: "Aquí irá el testimonio real del segundo abogado o abogada, una vez que autorice su publicación.",
-    testimonialName2: "Lic. Jonathan Alves",
+    testimonialName2: "Lic. Jonathan Álvez",
     testimonialRole2: "Abogado",
 
     processEyebrow: "CÓMO TRABAJAMOS",
@@ -143,7 +143,7 @@ const traducciones = {
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Attorney",
     testimonialPlaceholder2: "The second attorney’s actual testimonial will appear here once permission to publish it has been granted.",
-    testimonialName2: "Lic. Jonathan Alves",
+    testimonialName2: "Lic. Jonathan Álvez",
     testimonialRole2: "Attorney",
 
     processEyebrow: "HOW IT WORKS",
@@ -225,7 +225,7 @@ const traducciones = {
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Avocat",
     testimonialPlaceholder2: "Le témoignage réel du deuxième avocat ou de la deuxième avocate figurera ici après autorisation de publication.",
-    testimonialName2: "Lic. Jonathan Alves",
+    testimonialName2: "Lic. Jonathan Álvez",
     testimonialRole2: "Avocat · Témoignage en attente",
 
     processEyebrow: "COMMENT ÇA MARCHE",
