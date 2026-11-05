@@ -145,7 +145,7 @@ const traducciones = {
     testimonialRole1: "Attorney",
     testimonialPlaceholder2: "The second attorney’s actual testimonial will appear here once permission to publish it has been granted.",
     testimonialName2: "Lic. Jonathan Alves",
-    testimonialRole2: "Attorney · Testimonial pending",
+    testimonialRole2: "Attorney",
     testimonialNote: "Before publishing, replace these placeholders with genuine testimonials and make sure you have permission to share them.",
 
     processEyebrow: "HOW IT WORKS",
