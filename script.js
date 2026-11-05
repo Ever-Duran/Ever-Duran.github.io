@@ -60,11 +60,10 @@ const traducciones = {
     testimonialsIntro: "Este espacio está preparado para compartir las opiniones de profesionales del derecho que han utilizado mis servicios.",
     testimonialPlaceholder1: "Excelente servicio de traducción el que brinda el Lic. Ever Durán. Su trabajo se caracteriza por ser expedito, ágil y diligente. Lo recomiendo ampliamente por su profesionalismo.",
     testimonialName1: "Lic. Antonio Zepeda",
-    testimonialRole1: "Abogado/a · Testimonio pendiente",
+    testimonialRole1: "Abogado",
     testimonialPlaceholder2: "Aquí irá el testimonio real del segundo abogado o abogada, una vez que autorice su publicación.",
     testimonialName2: "Lic. Jonathan Alves",
     testimonialRole2: "Abogado",
-    testimonialNote: "Antes de publicar, reemplaza estos textos con testimonios auténticos y confirma que tienes permiso para compartirlos.",
 
     processEyebrow: "CÓMO TRABAJAMOS",
     processTitle: "Un proceso sencillo,<br><em>de principio a fin.</em>",
@@ -146,7 +145,6 @@ const traducciones = {
     testimonialPlaceholder2: "The second attorney’s actual testimonial will appear here once permission to publish it has been granted.",
     testimonialName2: "Lic. Jonathan Alves",
     testimonialRole2: "Attorney",
-    testimonialNote: "Before publishing, replace these placeholders with genuine testimonials and make sure you have permission to share them.",
 
     processEyebrow: "HOW IT WORKS",
     processTitle: "A simple process,<br><em>from start to finish.</em>",
@@ -229,7 +227,6 @@ const traducciones = {
     testimonialPlaceholder2: "Le témoignage réel du deuxième avocat ou de la deuxième avocate figurera ici après autorisation de publication.",
     testimonialName2: "Lic. Jonathan Alves",
     testimonialRole2: "Avocat · Témoignage en attente",
-    testimonialNote: "Avant publication, remplacez ces textes provisoires par des témoignages authentiques et assurez-vous d’avoir l’autorisation de les partager.",
 
     processEyebrow: "COMMENT ÇA MARCHE",
     processTitle: "Une démarche simple,<br><em>du début à la fin.</em>",
