@@ -61,8 +61,8 @@ const traducciones = {
     testimonialPlaceholder1: "Excelente servicio de traducción el que brinda el Lic. Ever Durán. Su trabajo se caracteriza por ser expedito, ágil y diligente. Lo recomiendo ampliamente por su profesionalismo.",
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Abogado",
-    testimonialPlaceholder2: "Aquí irá el testimonio real del segundo abogado o abogada, una vez que autorice su publicación.",
-    testimonialName2: "Lic. Jonathan Álvez",
+    testimonialPlaceholder2: "La excelencia profesional se refleja en la calidad del trabajo y en la satisfacción del cliente. El Lic. Ever Durán ofrece servicios de traducción caracterizados por su precisión, agilidad y profesionalismo. Una experiencia altamente satisfactoria que merece ser recomendada con plena confianza.",
+    testimonialName2: "Lic. Jonathan Álvarez",
     testimonialRole2: "Abogado",
 
     processEyebrow: "CÓMO TRABAJAMOS",
@@ -142,8 +142,8 @@ const traducciones = {
     testimonialsIntro: "This section is reserved for feedback from legal professionals who have used my services.",testimonialPlaceholder1: "Excellent translation services provided by Ever Durán. His work is prompt, efficient, and diligent. I highly recommend him for his professionalism.",
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Attorney",
-    testimonialPlaceholder2: "The second attorney’s actual testimonial will appear here once permission to publish it has been granted.",
-    testimonialName2: "Lic. Jonathan Álvez",
+    testimonialPlaceholder2: "Professional excellence is reflected in the quality of one's work and the satisfaction of one's clients. Ever Durán provides translation services distinguished by accuracy, efficiency, and professionalism. An outstanding experience that deserves to be recommended with complete confidence.",
+    testimonialName2: "Lic. Jonathan Álvarez",
     testimonialRole2: "Attorney",
 
     processEyebrow: "HOW IT WORKS",
@@ -224,8 +224,8 @@ const traducciones = {
     testimonialPlaceholder1: "Excellent service de traduction proposé par Ever Durán. Son travail se distingue par sa rapidité, son efficacité et son sérieux. Je le recommande vivement pour son professionnalisme.",
     testimonialName1: "Lic. Antonio Zepeda",
     testimonialRole1: "Avocat",
-    testimonialPlaceholder2: "Le témoignage réel du deuxième avocat ou de la deuxième avocate figurera ici après autorisation de publication.",
-    testimonialName2: "Lic. Jonathan Álvez",
+    testimonialPlaceholder2: "L’excellence professionnelle se reflète dans la qualité du travail et la satisfaction des clients. Ever Durán propose des services de traduction qui se distinguent par leur précision, leur réactivité et leur professionnalisme. Une expérience particulièrement satisfaisante qui mérite d’être recommandée en toute confiance.",
+    testimonialName2: "Lic. Jonathan Álvarez",
     testimonialRole2: "Avocat · Témoignage en attente",
 
     processEyebrow: "COMMENT ÇA MARCHE",
