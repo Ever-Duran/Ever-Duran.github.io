@@ -226,7 +226,7 @@ const traducciones = {
     testimonialRole1: "Avocat",
     testimonialPlaceholder2: "L’excellence professionnelle se reflète dans la qualité du travail et la satisfaction des clients. Ever Durán propose des services de traduction qui se distinguent par leur précision, leur réactivité et leur professionnalisme. Une expérience particulièrement satisfaisante qui mérite d’être recommandée en toute confiance.",
     testimonialName2: "Lic. Jonathan Álvarez",
-    testimonialRole2: "Avocat · Témoignage en attente",
+    testimonialRole2: "Avocat",
 
     processEyebrow: "COMMENT ÇA MARCHE",
     processTitle: "Une démarche simple,<br><em>du début à la fin.</em>",
